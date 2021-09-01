@@ -3,17 +3,22 @@ body {
     margin: 100px;
 }
 #box {
+    display: inline-block;
     width: 350px;
     height: 470px;
     background: #FFFFFF;
+    overflow: hidden;
     #image {
+        display: block;
         background-image: url(img/fille.png);
         width: auto;
         height: 58%;
+        z-index: 1;
     }
     #boxText {
         margin-left: 20px;
         margin-right: 20px;
+        z-index: 10;
         #carre {
             background-color: #e84c3f;
             color: white;
@@ -28,6 +33,8 @@ body {
         }
         #block {
             background-color: white;
+            width: 100%;
+            height: 40%;
         }
         #title {
             font: {
@@ -42,6 +49,7 @@ body {
         }
         #text {
             visibility: collapse;
+            color: grey;
         }
         #foot {
             color: gray;
@@ -49,7 +57,7 @@ body {
         }
     }
     &:hover {
-        animation: transition 1s ease 0s 1 normal forwards;
+        animation: transitionUp 1s ease 0s 1 normal forwards;
         #image {
             animation-name: animg;
             animation-duration: 1s;
@@ -86,46 +94,133 @@ body {
             animation-timing-function: ease;
             animation-fill-mode: forwards;
         }
-        #foot {
-            animation-name: anfoot;
+    }
+    &::after {
+        animation: transitionDown 1s ease 0s 1 normal forwards;
+        #image {
+            animation-name: animgDown;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+        }
+        #carre {
+            animation-name: ancarDown;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+        }
+        #block {
+            animation-name: anbloDown;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+        }
+        #title {
+            animation-name: antitDown;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+        }
+        #subtitle {
+            animation-name: ansubDown;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+        }
+        #text {
+            animation-name: antxtDown;
             animation-duration: 1s;
             animation-timing-function: ease;
             animation-fill-mode: forwards;
         }
     }
 }
+@keyframes transitionUp {
+    to {
+        box-shadow: 1px 1px 10px 2px;
+    }
+}
 @keyframes animg {
     to {
-            opacity: 0.5;
+        opacity: 0.5;
+        transform-origin: 50% 50%;
+        transform: scale(1.05);
     }
 }
 @keyframes ancar {
     to {
-            transform: translate(0, -30px);
+        transform: translate(0, -30px);
     }
 }
 @keyframes anblo {
     to {
-            transform: translate(0, -30px);
+        //transform: translate(0, -30px);
     }
 }
 @keyframes antit {
     to {
-        
+        transform: translate(0, -40px);        
     }
 }
 @keyframes ansub {
     to {
-        
+        transform: translate(0, -40px);
     }
 }
 @keyframes antxt {
     to {
-        
+        transform: translate(0, -30px);
+        visibility: visible;
+    }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
     }
 }
-@keyframes anfoot {
+
+@keyframes transitionDown {
     to {
-        
+        box-shadow: 1px 1px 10px 2px;
+    }
+}
+@keyframes animgDown {
+    to {
+        opacity: 1;
+        transform-origin: 50% 50%;
+        transform: scale(1);
+    }
+}
+@keyframes ancarDown {
+    to {
+        transform: translate(0, 30px);
+    }
+}
+@keyframes anbloDown {
+    to {
+        //transform: translate(0, -30px);
+    }
+}
+@keyframes antitDown {
+    to {
+        transform: translate(0, 40px);        
+    }
+}
+@keyframes ansubDown {
+    to {
+        transform: translate(0, 40px);
+    }
+}
+@keyframes antxtDown {
+    to {
+        transform: translate(0, 30px);
+        visibility: hidden;
+    }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
     }
 }

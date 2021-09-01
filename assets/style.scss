@@ -1,0 +1,48 @@
+body {
+    background: #eeeeee;
+}
+#box {
+    width: 350px;
+    height: 470px;
+    background: #FFFFFF;
+    #image {
+        background-image: url(img/fille.png);
+        width: auto;
+        height: 58%;
+    }
+    #boxText {
+        margin-left: 20px;
+        margin-right: 20px;
+        #carre {
+            background-color: #e84c3f;
+            color: white;
+            width: 91px;
+            height: 25px;
+            position: relative;
+            top: -34px;
+            left: -20px;
+            margin: 0;
+            text-align: center;
+            padding-top: 9px;
+        }
+        #title {
+            font: {
+                size: 25px;
+                weight: bold;
+            }
+            margin-bottom: 5px;
+        }
+        #subtitle {
+            color: #e84c3f;
+            font-size: 20px;
+        }
+        #text {
+            //visibility: collapse;
+            color: white;
+        }
+        #foot {
+            color: gray;
+
+        }
+    }
+}

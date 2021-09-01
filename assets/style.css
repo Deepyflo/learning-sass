@@ -1,0 +1,53 @@
+body {
+  background: #eeeeee;
+}
+
+#box {
+  width: 350px;
+  height: 470px;
+  background: #FFFFFF;
+}
+
+#box #image {
+  background-image: url(img/fille.png);
+  width: auto;
+  height: 58%;
+}
+
+#box #boxText {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#box #boxText #carre {
+  background-color: #e84c3f;
+  color: white;
+  width: 91px;
+  height: 25px;
+  position: relative;
+  top: -34px;
+  left: -20px;
+  margin: 0;
+  text-align: center;
+  padding-top: 9px;
+}
+
+#box #boxText #title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#box #boxText #subtitle {
+  color: #e84c3f;
+  font-size: 20px;
+}
+
+#box #boxText #text {
+  color: white;
+}
+
+#box #boxText #foot {
+  color: gray;
+}
+/*# sourceMappingURL=style.css.map */

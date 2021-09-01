@@ -1,5 +1,6 @@
 body {
   background: #eeeeee;
+  margin: 100px;
 }
 
 #box {
@@ -23,13 +24,17 @@ body {
   background-color: #e84c3f;
   color: white;
   width: 91px;
-  height: 25px;
+  height: 26px;
   position: relative;
-  top: -34px;
+  top: -31px;
   left: -20px;
   margin: 0;
   text-align: center;
   padding-top: 9px;
+}
+
+#box #boxText #block {
+  background-color: white;
 }
 
 #box #boxText #title {
@@ -44,10 +49,172 @@ body {
 }
 
 #box #boxText #text {
-  color: white;
+  visibility: collapse;
 }
 
 #box #boxText #foot {
   color: gray;
+}
+
+#box:hover {
+  -webkit-animation: transition 1s ease 0s 1 normal forwards;
+          animation: transition 1s ease 0s 1 normal forwards;
+}
+
+#box:hover #image {
+  -webkit-animation-name: animg;
+          animation-name: animg;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#box:hover #carre {
+  -webkit-animation-name: ancar;
+          animation-name: ancar;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#box:hover #block {
+  -webkit-animation-name: anblo;
+          animation-name: anblo;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#box:hover #title {
+  -webkit-animation-name: antit;
+          animation-name: antit;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#box:hover #subtitle {
+  -webkit-animation-name: ansub;
+          animation-name: ansub;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#box:hover #text {
+  -webkit-animation-name: antxt;
+          animation-name: antxt;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#box:hover #foot {
+  -webkit-animation-name: anfoot;
+          animation-name: anfoot;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animg {
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes animg {
+  to {
+    opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes ancar {
+  to {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
+}
+
+@keyframes ancar {
+  to {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
+}
+
+@-webkit-keyframes anblo {
+  to {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
+}
+
+@keyframes anblo {
+  to {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
+}
+
+@-webkit-keyframes antit {
+  to {
+  }
+}
+
+@keyframes antit {
+  to {
+  }
+}
+
+@-webkit-keyframes ansub {
+  to {
+  }
+}
+
+@keyframes ansub {
+  to {
+  }
+}
+
+@-webkit-keyframes antxt {
+  to {
+  }
+}
+
+@keyframes antxt {
+  to {
+  }
+}
+
+@-webkit-keyframes anfoot {
+  to {
+  }
+}
+
+@keyframes anfoot {
+  to {
+  }
 }
 /*# sourceMappingURL=style.css.map */

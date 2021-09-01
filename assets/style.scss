@@ -1,5 +1,6 @@
 body {
     background: #eeeeee;
+    margin: 100px;
 }
 #box {
     width: 350px;
@@ -17,13 +18,16 @@ body {
             background-color: #e84c3f;
             color: white;
             width: 91px;
-            height: 25px;
+            height: 26px;
             position: relative;
-            top: -34px;
+            top: -31px;
             left: -20px;
             margin: 0;
             text-align: center;
             padding-top: 9px;
+        }
+        #block {
+            background-color: white;
         }
         #title {
             font: {
@@ -37,12 +41,91 @@ body {
             font-size: 20px;
         }
         #text {
-            //visibility: collapse;
-            color: white;
+            visibility: collapse;
         }
         #foot {
             color: gray;
 
         }
+    }
+    &:hover {
+        animation: transition 1s ease 0s 1 normal forwards;
+        #image {
+            animation-name: animg;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+        }
+        #carre {
+            animation-name: ancar;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+        }
+        #block {
+            animation-name: anblo;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+        }
+        #title {
+            animation-name: antit;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+        }
+        #subtitle {
+            animation-name: ansub;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+        }
+        #text {
+            animation-name: antxt;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+        }
+        #foot {
+            animation-name: anfoot;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+@keyframes animg {
+    to {
+            opacity: 0.5;
+    }
+}
+@keyframes ancar {
+    to {
+            transform: translate(0, -30px);
+    }
+}
+@keyframes anblo {
+    to {
+            transform: translate(0, -30px);
+    }
+}
+@keyframes antit {
+    to {
+        
+    }
+}
+@keyframes ansub {
+    to {
+        
+    }
+}
+@keyframes antxt {
+    to {
+        
+    }
+}
+@keyframes anfoot {
+    to {
+        
     }
 }

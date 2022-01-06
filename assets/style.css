@@ -1,0 +1,520 @@
+body {
+  background: #eeeeee;
+  margin: 100px;
+}
+
+#box {
+  display: inline-block;
+  width: 350px;
+  height: 470px;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+#box #image {
+  display: block;
+  background-image: url(img/fille.png);
+  width: auto;
+  height: 58%;
+  z-index: 1;
+}
+
+#box #boxText {
+  margin-left: 20px;
+  margin-right: 20px;
+  z-index: 10;
+}
+
+#box #boxText #carre {
+  background-color: #e84c3f;
+  color: white;
+  width: 91px;
+  height: 26px;
+  position: relative;
+  top: -31px;
+  left: -20px;
+  margin: 0;
+  text-align: center;
+  padding-top: 9px;
+}
+
+#box #boxText #block {
+  position: absolute;
+  background-color: white;
+  width: 350px;
+  height: 50px;
+  top: 375px;
+  margin-left: -20px;
+  z-index: 0;
+}
+
+#box #boxText #title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#box #boxText #subtitle {
+  color: #e84c3f;
+  font-size: 20px;
+}
+
+#box #boxText #text {
+  visibility: collapse;
+  color: grey;
+}
+
+#box #boxText #foot {
+  color: gray;
+}
+
+#box:hover {
+  -webkit-animation: transitionUp 1s ease 0s 1 normal forwards;
+          animation: transitionUp 1s ease 0s 1 normal forwards;
+}
+
+#box:hover #image {
+  -webkit-animation-name: animg;
+          animation-name: animg;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#box:hover #carre {
+  -webkit-animation-name: ancar;
+          animation-name: ancar;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#box:hover #block {
+  -webkit-animation-name: anblo;
+          animation-name: anblo;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#box:hover #title {
+  -webkit-animation-name: antit;
+          animation-name: antit;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#box:hover #subtitle {
+  -webkit-animation-name: ansub;
+          animation-name: ansub;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#box:hover #text {
+  -webkit-animation-name: antxt;
+          animation-name: antxt;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#box {
+  -webkit-animation: transitionDown 1s ease 0s 1 normal forwards;
+          animation: transitionDown 1s ease 0s 1 normal forwards;
+}
+
+#box #image {
+  -webkit-animation-name: animgDown;
+          animation-name: animgDown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#box #carre {
+  -webkit-animation-name: ancarDown;
+          animation-name: ancarDown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#box #block {
+  -webkit-animation-name: anbloDown;
+          animation-name: anbloDown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#box #title {
+  -webkit-animation-name: antitDown;
+          animation-name: antitDown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#box #subtitle {
+  -webkit-animation-name: ansubDown;
+          animation-name: ansubDown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#box #text {
+  -webkit-animation-name: antxtDown;
+          animation-name: antxtDown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes transitionUp {
+  to {
+    -webkit-box-shadow: 1px 1px 10px 2px;
+            box-shadow: 1px 1px 10px 2px;
+  }
+}
+
+@keyframes transitionUp {
+  to {
+    -webkit-box-shadow: 1px 1px 10px 2px;
+            box-shadow: 1px 1px 10px 2px;
+  }
+}
+
+@-webkit-keyframes animg {
+  to {
+    opacity: 0.5;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
+@keyframes animg {
+  to {
+    opacity: 0.5;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
+@-webkit-keyframes ancar {
+  to {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
+}
+
+@keyframes ancar {
+  to {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
+}
+
+@-webkit-keyframes anblo {
+  from {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  to {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
+}
+
+@keyframes anblo {
+  from {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  to {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
+}
+
+@-webkit-keyframes antit {
+  to {
+    -webkit-transform: translate(0, -40px);
+            transform: translate(0, -40px);
+  }
+}
+
+@keyframes antit {
+  to {
+    -webkit-transform: translate(0, -40px);
+            transform: translate(0, -40px);
+  }
+}
+
+@-webkit-keyframes ansub {
+  to {
+    -webkit-transform: translate(0, -40px);
+            transform: translate(0, -40px);
+  }
+}
+
+@keyframes ansub {
+  to {
+    -webkit-transform: translate(0, -40px);
+            transform: translate(0, -40px);
+  }
+}
+
+@-webkit-keyframes antxt {
+  to {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+    visibility: visible;
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes antxt {
+  to {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+    visibility: visible;
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes transitionDown {
+  from {
+    -webkit-box-shadow: 1px 1px 10px 2px;
+            box-shadow: 1px 1px 10px 2px;
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 0px 0px;
+            box-shadow: 0px 0px 0px 0px;
+  }
+}
+
+@keyframes transitionDown {
+  from {
+    -webkit-box-shadow: 1px 1px 10px 2px;
+            box-shadow: 1px 1px 10px 2px;
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 0px 0px;
+            box-shadow: 0px 0px 0px 0px;
+  }
+}
+
+@-webkit-keyframes animgDown {
+  from {
+    opacity: 0.5;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animgDown {
+  from {
+    opacity: 0.5;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes ancarDown {
+  from {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
+  to {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@keyframes ancarDown {
+  from {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
+  to {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@-webkit-keyframes anbloDown {
+  from {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
+  to {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@keyframes anbloDown {
+  from {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
+  to {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@-webkit-keyframes antitDown {
+  from {
+    -webkit-transform: translate(0, -40px);
+            transform: translate(0, -40px);
+  }
+  to {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@keyframes antitDown {
+  from {
+    -webkit-transform: translate(0, -40px);
+            transform: translate(0, -40px);
+  }
+  to {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@-webkit-keyframes ansubDown {
+  from {
+    -webkit-transform: translate(0, -40px);
+            transform: translate(0, -40px);
+  }
+  to {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@keyframes ansubDown {
+  from {
+    -webkit-transform: translate(0, -40px);
+            transform: translate(0, -40px);
+  }
+  to {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@-webkit-keyframes antxtDown {
+  from {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+    visibility: hidden;
+  }
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes antxtDown {
+  from {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+    visibility: hidden;
+  }
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
